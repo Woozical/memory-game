@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Memory Game!</h1>
+      <h2 id="timer">Time: 0:00</h2>
+      <h2 id="bestTime">Best Time: ?</h2>
+      <button id="startBtn">Start Game!</button>
+      <button id="restartBtn">Reset Board</button>
+      <button id="wipeData">Reset Best Score</button>
+      <form>Select Your Difficulty:
+        <input type="radio" id="normal" name="difficulty" value="0" checked>
+        <label for="normal">Normal</label>
+        <input type="radio" id="hard" name="difficulty" value="1">
+        <label for="hard">Hard</label>
+        <input type="radio" id="insane" name="difficulty" value="2">
+        <label for="insane">Insane</label>
+      </form>
+    </div>
+    <div id="game">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
