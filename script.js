@@ -259,6 +259,9 @@ function menuClickHandler(e){
       break;
     default:
       localStorage.setItem('difficulty', difficultyForm.difficulty.value);
+      if (!gameStarted){
+        restartGame();
+      }
   }
 }
 document.querySelector('.header').addEventListener('click', menuClickHandler);
