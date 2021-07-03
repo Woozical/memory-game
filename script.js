@@ -258,9 +258,12 @@ function menuClickHandler(e){
       bestTimeDisplay.innerText = 'Best Time: ?';
       break;
     default:
-      localStorage.setItem('difficulty', difficultyForm.difficulty.value);
-      if (!gameStarted){
-        restartGame();
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'FORM'){
+        localStorage.setItem('difficulty', difficultyForm.difficulty.value);
+        if (!gameStarted){
+          restartGame();
+        }
+        break;
       }
   }
 }
